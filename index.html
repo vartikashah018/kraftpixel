@@ -4,188 +4,129 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About the Company</title>
+    <title>KraftPixel - Welcome</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header class="site-header">
-        <div class="container">
-            <div class="logo">
-                <img src="logo.svg" alt="Company Logo" />
+    <nav class="navbar__top">
+        <div class="logo">KraftPixel</div>
+        <div class="auth-buttons">
+            <a href="#" class="login-btn">Login</a>
+            <a href="#" class="signup-btn">Sign Up</a>
+        </div>
+    </nav>
+    <section class="about-section" style="max-width: 900px; margin: 40px auto; background: #f9fafb; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.04); padding: 32px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center;">
+        <div style="flex: 1 1 320px; min-width: 260px;">
+            <div class="highlight">About Us</div>
+            <h1 class="main-heading">Empowering Businesses with Digital Solutions</h1>
+            <p class="about-text">
+                KraftPixel is dedicated to delivering innovative digital solutions that drive business growth and efficiency. Our team of experts leverages the latest technologies to help you achieve your goals.
+            </p>
+            <div class="stats" style="grid-template-columns: repeat(3, minmax(80px, 1fr));">
+                <div class="stat">
+                    <h2>100k+</h2>
+                    <p>Clients Served</p>
+                </div>
+                <div class="stat">
+                    <h2>50k+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <h2>10k+</h2>
+                    <p>Years Experience</p>
+                </div>
             </div>
-            <nav class="main-nav">
-                <ul> </ul>
+        </div>
+        <div class="about-image" style="flex: 0 1 220px; max-width: 220px;">
+            <img src="office.jpg" alt="KraftPixel Office" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); object-fit: cover;" />
+        </div>
 
-                <!-- About Section -->
-                <section class="about-company">
-                    <div class="container">
-                        <h1 class="heading">About the company</h1>
-                        <p class="subheading">
-                            Learn more about the company and the team behind it
-                        </p>
-                    </div>
-                </section>
+        <section class="values-section" style="max-width:900px;margin:48px auto 0 auto;padding:40px 24px 0 24px;">
+            <h2 style="font-size:1.8rem;font-weight:600;color:#101828;text-align:center;margin-bottom:12px;">Our Values</h2>
+            <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;margin-bottom:32px;">
+                <div style="flex:1 1 220px;min-width:220px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.03);padding:24px 18px;text-align:center;">
+                    <h3 style="color:#7F56D9;font-size:1.2rem;font-weight:600;margin-bottom:8px;">Integrity</h3>
+                    <p style="color:#667085;font-size:1rem;">We believe in honesty, transparency, and always doing the right thing for our clients and team.</p>
+                </div>
+                <div style="flex:1 1 220px;min-width:220px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.03);padding:24px 18px;text-align:center;">
+                    <h3 style="color:#7F56D9;font-size:1.2rem;font-weight:600;margin-bottom:8px;">Innovation</h3>
+                    <p style="color:#667085;font-size:1rem;">We embrace new ideas and technologies to deliver creative solutions that drive results.</p>
+                </div>
+                <div style="flex:1 1 220px;min-width:220px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.03);padding:24px 18px;text-align:center;">
+                    <h3 style="color:#7F56D9;font-size:1.2rem;font-weight:600;margin-bottom:8px;">Collaboration</h3>
+                    <p style="color:#667085;font-size:1rem;">We work closely with our clients and each other to achieve shared goals and lasting partnerships.</p>
+                </div>
+            </div>
+            <h2 style="font-size:1.8rem;font-weight:600;color:#101828;text-align:center;margin-bottom:12px;">How We Work</h2>
+            <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;">
+                <div style="flex:1 1 260px;min-width:240px;background:#f9fafb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.02);padding:24px 18px;">
+                    <h4 style="color:#344054;font-size:1.1rem;font-weight:600;margin-bottom:6px;">1. Discovery</h4>
+                    <p style="color:#667085;font-size:0.98rem;">We start by understanding your business, goals, and challenges to craft the right solution.</p>
+                </div>
+                <div style="flex:1 1 260px;min-width:240px;background:#f9fafb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.02);padding:24px 18px;">
+                    <h4 style="color:#344054;font-size:1.1rem;font-weight:600;margin-bottom:6px;">2. Design & Build</h4>
+                    <p style="color:#667085;font-size:0.98rem;">Our team designs, develops, and iterates with you to ensure the best possible outcome.</p>
+                </div>
+                <div style="flex:1 1 260px;min-width:240px;background:#f9fafb;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.02);padding:24px 18px;">
+                    <h4 style="color:#344054;font-size:1.1rem;font-weight:600;margin-bottom:6px;">3. Launch & Support</h4>
+                    <p style="color:#667085;font-size:0.98rem;">We launch your solution and provide ongoing support to help you grow and succeed.</p>
+                </div>
+            </div>
+        </section>
+        <section class="careers-section" style="max-width:900px;margin:48px auto 0 auto;padding:40px 24px 0 24px;">
+            <h2 style="font-size:1.8rem;font-weight:600;color:#101828;text-align:center;margin-bottom:12px;">Open Positions</h2>
+            <p style="color:#667085;font-size:1.1rem;text-align:center;margin-bottom:32px;">Join our passionate team and help us build the future of digital solutions. We’re always looking for talented people!</p>
+            <div style="display:flex;flex-wrap:wrap;gap:32px;justify-content:center;">
+                <div style="flex:1 1 320px;min-width:260px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.03);padding:24px 18px;">
+                    <h3 style="color:#7F56D9;font-size:1.15rem;font-weight:600;margin-bottom:8px;">Frontend Developer</h3>
+                    <p style="color:#667085;font-size:1rem;margin-bottom:10px;">React, HTML, CSS, JavaScript</p>
+                    <p style="color:#344054;font-size:0.98rem;margin-bottom:16px;">Work on modern web apps and collaborate with designers to deliver great user experiences.</p>
+                    <a href="#" class="signup-btn" style="font-size:14px;padding:8px 18px;">Apply Now</a>
+                </div>
+                <div style="flex:1 1 320px;min-width:260px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.03);padding:24px 18px;">
+                    <h3 style="color:#7F56D9;font-size:1.15rem;font-weight:600;margin-bottom:8px;">Backend Developer</h3>
+                    <p style="color:#667085;font-size:1rem;margin-bottom:10px;">Node.js, Python, APIs, Databases</p>
+                    <p style="color:#344054;font-size:0.98rem;margin-bottom:16px;">Build scalable backend systems and work with the team to deliver robust solutions.</p>
+                    <a href="#" class="signup-btn" style="font-size:14px;padding:8px 18px;">Apply Now</a>
+                </div>
+                <div style="flex:1 1 320px;min-width:260px;background:#fff;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.03);padding:24px 18px;">
+                    <h3 style="color:#7F56D9;font-size:1.15rem;font-weight:600;margin-bottom:8px;">UI/UX Designer</h3>
+                    <p style="color:#667085;font-size:1rem;margin-bottom:10px;">Figma, Prototyping, User Research</p>
+                    <p style="color:#344054;font-size:0.98rem;margin-bottom:16px;">Design beautiful and intuitive interfaces that delight our users.</p>
+                    <a href="#" class="signup-btn" style="font-size:14px;padding:8px 18px;">Apply Now</a>
+                </div>
+        </section>
+        <section class="cta-section" style="max-width:900px;margin:48px auto 0 auto;padding:40px 24px 0 24px;">
+            <div style="background:#fff;border-radius:16px;box-shadow:0 2px 16px rgba(0,0,0,0.04);padding:32px 24px;text-align:center;">
+                <h2 style="font-size:2rem;font-weight:600;color:#101828;margin-bottom:12px;">Start your 30-day free trial</h2>
+                <p style="color:#667085;font-size:1.1rem;margin-bottom:28px;">Join over 4,000+ startups already growing with KraftPixel.</p>
+                <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+                    <a href="#" class="login-btn" style="font-size:16px;padding:12px 28px;">Learn more</a>
+                    <a href="#" class="signup-btn" style="font-size:16px;padding:12px 28px;">Get started</a>
+                </div>
+            </div>
 
-                <!-- Stats + Image -->
-                <section class="company-info">
-                    <div class="container info-container">
-                        <div class="image-box">
-                            <img src="office.jpg" alt="Office Image" />
-                        </div>
-                        <div class="stats-content">
-                            <h2 class="info-heading">We’re only just getting started on our journey</h2>
-                            <p class="info-description">
-                                Everything you need to build modern UI and bring your ideas to life. We’ll guide you so you don’t have to do the guesswork.
-                            </p>
-                            <div class="stats-grid">
-                                <div class="stat-item">
-                                    <h3>400+</h3>
-                                    <p>Projects completed</p>
-                                </div>
-                                <div class="stat-item">
-                                    <h3>600%</h3>
-                                    <p>Return on investment</p>
-                                </div>
-                                <div class="stat-item">
-                                    <h3>10k</h3>
-                                    <p>Global downloads</p>
-                                </div>
-                                <div class="stat-item">
-                                    <h3>200+</h3>
-                                    <p>5-star reviews</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Logo Section -->
-                <section class="partner-logos">
-                    <div class="container">
-                        <p class="logos-subtext">From startups to the world’s largest companies</p>
-                        <div class="logos-row">
-                            <img src="layers.svg" alt="Layers" />
-                            <img src="sisyphus.svg" alt="Sisyphus" />
-                            <img src="circooles.svg" alt="Circooles" />
-                            <img src="catalog.svg" alt="Catalog" />
-                            <img src="quotient.svg" alt="Quotient" />
-                        </div>
-                    </div>
-                </section>
-                <!-- Job Listings Section -->
-                <section class="jobs-section">
-                    <div class="container">
-                        <div class="job-card">
-                            <h3>Engineering Manager</h3>
-                            <p>We’re looking for an experienced engineering manager to join our team.</p>
-                            <div class="job-meta">
-                                <span>Full-time</span>
-                                <span>$80k – $100k</span>
-                            </div>
-                        </div>
-
-                        <div class="job-card">
-                            <h3>Frontend Developer</h3>
-                            <p>We’re looking for an experienced frontend developer to join our team.</p>
-                            <div class="job-meta">
-                                <span>Full-time</span>
-                                <span>$80k – $100k</span>
-                            </div>
-                        </div>
-
-                        <div class="job-card">
-                            <h3>Backend Developer</h3>
-                            <p>We’re looking for an experienced backend developer to join our team.</p>
-                            <div class="job-meta">
-                                <span>Full-time</span>
-                                <span>$80k – $100k</span>
-                            </div>
-                        </div>
-
-                        <div class="job-card">
-                            <h3>Customer Success Manager</h3>
-                            <p>We’re looking for a mid-level product designer to join our team.</p>
-                            <div class="job-meta">
-                                <span>Full-time</span>
-                                <span>$80k – $100k</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- CTA Section -->
-                <section class="cta-section">
-                    <div class="container">
-                        <h2>Start your 30-day free trial</h2>
-                        <p>Join over 4,000+ startups already growing with Untitled.</p>
-                        <div class="cta-buttons">
-                            <button class="btn-outline">Learn more</button>
-                            <button class="btn-primary">Get started</button>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Footer -->
-                <footer class="site-footer">
-                    <div class="container">
-                        <div class="footer-brand">
-                            <strong>Untitled UI</strong>
-                            <p>Design amazing digital experiences that create more happy in the world</p>
-                        </div>
-                        <div class="footer-links">
-                            <div>
-                                <h4>Product</h4>
-                                <ul>
-                                    <li>Overview</li>
-                                    <li>Features</li>
-                                    <li>Solutions</li>
-                                    <li>Tutorials</li>
-                                    <li>Pricing</li>
-                                    <li>Releases</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4>Company</h4>
-                                <ul>
-                                    <li>About us</li>
-                                    <li>Careers</li>
-                                    <li>Press</li>
-                                    <li>News</li>
-                                    <li>Media kit</li>
-                                    <li>Contact</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4>Resources</h4>
-                                <ul>
-                                    <li>Blog</li>
-                                    <li>Newsletter</li>
-                                    <li>Events</li>
-                                    <li>Help centre</li>
-                                    <li>Tutorials</li>
-                                    <li>Support</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h4>Social & Legal</h4>
-                                <ul>
-                                    <li>Twitter</li>
-                                    <li>LinkedIn</li>
-                                    <li>GitHub</li>
-                                    <li>Terms</li>
-                                    <li>Privacy</li>
-                                    <li>Cookies</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="copyright">
-                            <p>© 2077 Untitled UI. All rights reserved.</p>
-                        </div>
-                    </div>
-                </footer>
-
+        </section>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+            <p style="color:#667085;font-size:1rem;">Don’t see a role that fits? <a href="#" style="color:#7F56D9;text-decoration:underline;">Send us your resume</a> and we’ll get in touch!</p>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <span>© 2025 KraftPixel. All rights reserved.</span>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter" class="footer-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path fill="#667085" d="M22.46 5.924c-.793.352-1.646.59-2.54.697a4.48 4.48 0 0 0 1.963-2.47 8.94 8.94 0 0 1-2.828 1.082A4.48 4.48 0 0 0 12.07 9.5c0 .352.04.695.116 1.022-3.728-.187-7.034-1.97-9.244-4.68a4.48 4.48 0 0 0-.606 2.254c0 1.555.792 2.927 2.002 3.73a4.47 4.47 0 0 1-2.03-.56v.057a4.48 4.48 0 0 0 3.6 4.393c-.193.052-.397.08-.607.08-.148 0-.292-.014-.432-.04a4.48 4.48 0 0 0 4.18 3.11A8.98 8.98 0 0 1 2 19.54a12.67 12.67 0 0 0 6.86 2.01c8.23 0 12.74-6.82 12.74-12.74 0-.194-.004-.387-.013-.578A9.1 9.1 0 0 0 24 4.59a8.98 8.98 0 0 1-2.54.697z"/></svg></a>
+                <a href="#" aria-label="LinkedIn" class="footer-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path fill="#667085" d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.88v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg></a>
+                <a href="#" aria-label="Facebook" class="footer-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path fill="#667085" d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .732.592 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.672c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24h-1.918c-1.504 0-1.797.715-1.797 1.763v2.314h3.587l-.467 3.622h-3.12v9.294h6.116c.73 0 1.322-.592 1.322-1.324v-21.35c0-.733-.592-1.325-1.325-1.325z"/></svg></a>
+                <a href="#" aria-label="GitHub" class="footer-icon"><svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path fill="#667085" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576 4.765-1.588 8.2-6.084 8.2-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

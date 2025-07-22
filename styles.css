@@ -1,5 +1,3 @@
-/* Reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -7,314 +5,226 @@
 }
 
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #f9f9f9;
-    color: #222;
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    color: #101828;
+    padding: 16px;
 }
 
-.navbar {
+a {
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+section,
+.cta-section,
+.values-section,
+.careers-section {
+    max-width: 900px;
+    margin: 48px auto 0;
+    padding: 40px 24px 0;
+}
+
+.navbar__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+    padding: 0 24px;
 }
 
-.navbar .logo {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.nav-links a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #555;
-}
-
-.auth-buttons a {
-    margin-left: 15px;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-}
-
-.login {
-    color: #555;
-}
-
-.signup {
-    background-color: #5a3ef9;
-    color: white;
-}
-
-.about-section .content {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
-.text-content h3 {
-    color: #888;
-    font-weight: normal;
-}
-
-.text-content h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.text-content p {
-    font-size: 18px;
-    color: #666;
-}
-
-.info-row {
+.auth-buttons {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    gap: 40px;
+    gap: 12px;
     align-items: center;
+    margin-left: auto;
+    text-align: right;
 }
 
-.office-img {
-    width: 100%;
-    max-width: 500px;
+.logo {
+    font-weight: 600;
+    font-size: 18px;
+    color: #101828;
+    text-align: left;
+}
+
+.cta-buttons,
+.footer-social,
+.value-cards,
+.work-cards,
+.job-cards,
+.footer-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.login-btn,
+.signup-btn {
+    font-size: 14px;
+    padding: 8px 14px;
     border-radius: 8px;
 }
 
-.stats h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.login-btn {
+    font-weight: 500;
+    color: #344054;
 }
 
-.stats ul {
-    list-style: none;
-    padding: 0;
+.login-btn:hover {
+    background: #f9fafb;
 }
 
-.stats li {
-    margin: 10px 0;
-    font-size: 18px;
+.signup-btn {
+    font-weight: 600;
+    color: #fff;
+    background: #7F56D9;
 }
 
-.stats strong {
-    font-size: 22px;
-    color: #5a3ef9;
+.signup-btn:hover {
+    background: #6941C6;
 }
 
-body {
-    font-family: "Arial", sans-serif;
-    background-color: #fff;
-    color: #111;
-    padding: 1rem;
+.highlight {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6941C6;
+    margin-bottom: 12px;
+}
+
+.main-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.about-text,
+.cta-section p,
+.careers-section p,
+.value-card p,
+.work-card p,
+.job-card p,
+.careers-footer p,
+.footer-left {
+    font-size: 1rem;
+    color: #667085;
     line-height: 1.6;
-}
-
-.container {
-    max-width: 768px;
-    margin: 0 auto;
-}
-
-
-/* About Section */
-
-.about-company .heading {
-    font-size: 1.8rem;
-    font-weight: bold;
     text-align: center;
-    margin-bottom: 0.5rem;
 }
 
-.about-company .subheading {
-    text-align: center;
-    color: #666;
-    margin-bottom: 2rem;
-    font-size: 1rem;
-}
-
-
-/* Info Section */
-
-.info-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.image-box img {
-    width: 100%;
-    border-radius: 12px;
-}
-
-.stats-content .info-heading {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.stats-content .info-description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-}
-
-.stats-grid {
+.stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 16px;
+    margin-bottom: 24px;
 }
 
-.stat-item h3 {
-    font-size: 1.4rem;
-    color: #5b21b6;
-    /* Purple-ish like Figma */
+.stat h2 {
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.stat-item p {
-    font-size: 0.9rem;
-    color: #666;
+.stat p {
+    font-size: 14px;
 }
 
+.about-image img,
+.cta-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(252, 5, 5, 0.1);
+    margin-top: 32px;
+}
 
-/* Logos Section */
+.cta-card,
+.value-card,
+.work-card,
+.job-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px 18px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+    text-align: center;
+    min-width: 240px;
+    flex: 1 1 260px;
+}
 
-.partner-logos {
-    margin-top: 2rem;
+.cta-card {
+    padding: 32px 24px;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+}
+
+.cta-section h2,
+.values-section h2,
+.careers-section h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #101828;
+    margin-bottom: 12px;
     text-align: center;
 }
 
-.logos-subtext {
-    font-size: 0.95rem;
-    color: #888;
-    margin-bottom: 1rem;
+.value-card h3,
+.job-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7F56D9;
+    margin-bottom: 8px;
 }
 
-.logos-row {
+.work-card {
+    background: #f9fafb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.work-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #344054;
+    margin-bottom: 6px;
+}
+
+.job-card p:last-of-type {
+    color: #344054;
+    font-size: 0.98rem;
+    margin-bottom: 16px;
+}
+
+.careers-footer {
+    margin-top: 32px;
+}
+
+.careers-footer a {
+    color: #7F56D9;
+    text-decoration: underline;
+}
+
+.site-footer {
+    background: #f9fafb;
+    border-top: 1px solid #e4e7ec;
+    padding: 32px 24px 20px;
+    margin-top: 56px;
+}
+
+.footer-icon {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: background 0.2s;
 }
 
-.logos-row img {
-    height: 32px;
-    object-fit: contain;
+.footer-icon:hover {
+    background: #ece9f9;
 }
 
-
-/* Desktop styles */
-
-@media (min-width: 768px) {
-    .info-container {
-        flex-direction: row;
-        align-items: center;
-    }
-    .image-box,
-    .stats-content {
-        flex: 1;
-    }
-    .stats-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-    /* Job Section */
-    .jobs-section {
-        padding: 2rem 1rem;
-        background: #fff;
-    }
-    .job-card {
-        border: 1px solid #e0e0e0;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 8px;
-    }
-    .job-card h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.25rem;
-    }
-    .job-card p {
-        color: #666;
-        font-size: 0.95rem;
-        margin-bottom: 0.5rem;
-    }
-    .job-meta {
-        display: flex;
-        justify-content: space-between;
-        font-size: 0.85rem;
-        color: #333;
-    }
-    /* CTA */
-    .cta-section {
-        background-color: #f5f5ff;
-        padding: 2rem 1rem;
-        text-align: center;
-    }
-    .cta-section h2 {
-        font-size: 1.5rem;
-        margin-bottom: 0.5rem;
-    }
-    .cta-section p {
-        margin-bottom: 1rem;
-        color: #555;
-    }
-    .cta-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-    .btn-outline {
-        padding: 0.5rem 1rem;
-        border: 1px solid #5b21b6;
-        background: transparent;
-        color: #5b21b6;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    .btn-primary {
-        padding: 0.5rem 1rem;
-        background: #5b21b6;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    /* Footer */
-    .site-footer {
-        background: #f8f8f8;
-        padding: 2rem 1rem;
-        font-size: 0.9rem;
-    }
-    .footer-brand {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    .footer-links {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    .footer-links h4 {
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-    }
-    .footer-links ul {
-        list-style: none;
-        padding: 0;
-    }
-    .footer-links li {
-        margin-bottom: 0.4rem;
-        color: #555;
-    }
-    .copyright {
-        margin-top: 2rem;
-        text-align: center;
-        color: #aaa;
-    }
-    /* Tablet & Desktop */
-    @media (min-width: 768px) {
-        .footer-links {
-            grid-template-columns: repeat(4, 1fr);
-        }
-    }
+.footer-icon svg {
+    width: 22px;
+    height: 22px;
 }
